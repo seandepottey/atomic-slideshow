@@ -13,6 +13,9 @@ import ShowcaseOrganism from "../components/organisms/ShowcaseOrganism";
 
 import templateImage from '../images/template.png';
 import fiveStages from '../images/five-stages.png';
+import page_mock1 from '../images/page_mock1.png';
+import page_mock2 from '../images/page_mock2.png';
+import page_mock3 from '../images/page_mock3.png';
 
 // markup
 const IndexPage = () => {
@@ -39,7 +42,7 @@ const IndexPage = () => {
               <blockquote>"The page has been with us for a long time now. A few millennia, actually. The first books were thick slabs of clay created about 4,000 years ago..."</blockquote>
              <blockquote>Atomic design is a methodology composed of five distinct stages working together to create interface design systems in a more deliberate and hierarchical manner.</blockquote>
             </div>
-            
+
             <h4>Why and how of design systems</h4>
             <ul>
               <li>To create a manageable strategy through an iterative process</li>
@@ -47,7 +50,7 @@ const IndexPage = () => {
               <li>Systematic UI design</li>
               <li>Style Guides</li>
             </ul>
-            
+
             <h4>Key Terms</h4>
             <ul>
               <li>Design System</li>
@@ -80,6 +83,20 @@ const IndexPage = () => {
                 <h4>Button:</h4>
                 <Button />
               </div>
+            </div>
+            <div class='flex'>
+                <div class=''>
+                    <h4>Basic Web UI Elements</h4>
+                    <ul>
+                        <li>Text</li>
+                        <li>Buttons</li>
+                        <li>Media</li>
+                        <li></li>
+                    </ul>
+                </div>
+                {/* <div class=''>
+                    <h4></h4>
+                </div> */}
             </div>
           </Layout>
         </Layer>
@@ -125,7 +142,17 @@ const IndexPage = () => {
             header='Pages'
             quote='Pages are specific instances of templates that show what a UI looks like with real representative content in place. Building on our previous example, we can take the homepage template and pour representative text, images, and media into the template to show real content in action.'
           >
-            
+            <div className='flex'>
+                <div>
+                    <img src={page_mock1} />
+                </div>
+                <div>
+                    <img src={page_mock2} />
+                </div>
+                <div>
+                    <img src={page_mock3} />
+                </div>
+            </div>
           </Layout>
         </Layer>
         <Layer className='light-bg'>
