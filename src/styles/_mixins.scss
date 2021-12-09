@@ -1,0 +1,27 @@
+@each $theme-color, $value in $theme-colors {
+    .#{$theme-color}-bg {
+        background-color: $value;
+    }
+
+    .#{$theme-color}-txt {
+        color: $value;
+    }
+
+    .#{$theme-color}-outline {
+        border-style: solid;
+        border-color: #{$value};
+        border-width: 2px;
+
+        &_large {
+            border-style: solid;
+            border-color: #{$value};
+            border-width: 4px;
+        }
+
+        &_small {
+            border-style: solid;
+            border-color: #{$value};
+            border-width: 1px;
+        }
+    }
+}

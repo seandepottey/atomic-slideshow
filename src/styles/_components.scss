@@ -1,0 +1,114 @@
+.Circle {
+    border-radius: 50%;
+
+    &.xlarge {
+        width: $icon-size-xlarge;
+        height: $icon-size-xlarge;
+    }
+
+    &.large {
+        width: $icon-size-large;
+        height: $icon-size-large;
+    }
+
+    &.medium {
+        width: $icon-size;
+        height: $icon-size;
+    }
+
+    &.small {
+        width: $icon-size-small;
+        height: $icon-size-small;
+    }
+
+    &.xsmall {
+        width: $icon-size-xsmall;
+        height: $icon-size-xsmall; 
+    }
+}
+
+div.Slide {
+
+    &:not(:first-of-type) {
+        position: absolute;
+        top: 100%;
+        transition: transform .3s ease-in-out;
+
+        &.active {
+            transform: translateY(-100%);
+        }
+    }
+}
+
+.fill-space {
+    width: 100%;
+    height: 100%;
+}
+
+.Layer {
+    padding: 4rem;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.Logo {
+    animation: rotation 4s infinite linear;
+
+    .Circle.floater {
+        transform: translateY(-50%);
+    }
+}
+
+.VerticalSlider {
+    position: relative;
+    overflow: hidden;
+}
+
+.Molecule {
+    .Logo {
+
+    }
+}
+
+.showcase {
+    button, input, label {
+        font-size: 3rem;
+    }
+}
+
+.ShowcaseOrganism {
+    button, input, label {
+        margin-bottom: 0;
+        font-size: 1.5rem;
+    }
+
+    .nav-left {
+        button {
+            margin-right: .5rem;
+        }
+    }
+}
+
+button.btn-primary {
+    color: $light;
+    background-color: $primary;
+}
+
+button.btn-dark {
+    color: $light;
+    background-color: $dark;
+}
+
+button.btn-light {
+    color: $dark;
+    background-color: $light;
+}
+
+input.input-light {
+    color: $dark;
+    background-color: $light;
+}

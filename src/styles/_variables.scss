@@ -1,0 +1,41 @@
+// Colors
+$dark-grey: #120c0f;
+$gray: #b4abac;
+$offwhite: #f6f5e0;
+$tan: #e5d8b3;
+$dark-tan: #b6a48a;
+
+$dark-orange: #b26b25;
+$orange: #cd9952;
+
+$blue: #539fd9;
+$light-blue: #90c7f1;
+$sky-blue: #bde2ee;
+
+$red: #FF7E7A;
+
+// Theme Colors
+
+$dark: $dark-grey;
+$light: $offwhite;
+$primary: $dark-orange;
+$secondary: $blue;
+
+$theme-colors: (
+    dark: $dark,
+    light: $light,
+    primary: $dark-orange,
+    primary-alt: $orange,
+    secondary: $blue,
+    secondary-alt: $light-blue,
+    tertiary: $red,
+    quartery: $sky-blue
+);
+
+$base-font-size: 1rem;
+
+$icon-size: 4rem;
+$icon-size-xsmall: $icon-size * .25;
+$icon-size-small: $icon-size * .5;
+$icon-size-large: $icon-size * 2;
+$icon-size-xlarge: $icon-size * 4;
